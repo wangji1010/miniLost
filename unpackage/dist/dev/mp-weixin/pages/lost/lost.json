@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "失物招领",
+  "navigationBarTextStyle": "black",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "uni-tag": "/components/uni-tag/uni-tag",
+    "uni-nav-bar": "/components/uni-nav-bar/uni-nav-bar",
+    "mnavbar": "/components/mnavbar/mnavbar"
+  }
+}

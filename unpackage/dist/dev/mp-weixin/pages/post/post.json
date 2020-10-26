@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "帖子",
+  "navigationBarTextStyle": "black",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "u-loadmore": "/uview-ui/components/u-loadmore/u-loadmore",
+    "u-back-top": "/uview-ui/components/u-back-top/u-back-top",
+    "uni-icons": "/components/uni-icons/uni-icons"
+  }
+}
