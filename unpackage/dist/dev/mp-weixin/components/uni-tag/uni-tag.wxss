@@ -35,20 +35,26 @@
   -webkit-justify-content: center;
           justify-content: center;
   color: #333;
-  border-radius: 6rpx;
+  -webkit-border-radius: 6rpx;
+          border-radius: 6rpx;
   background-color: #f8f8f8;
   border-width: 1rpx;
   border-style: solid;
   border-color: #f8f8f8;
 }
 .uni-tag--circle.data-v-3f606880 {
-  border-radius: 15px;
+  -webkit-border-radius: 15px;
+          border-radius: 15px;
 }
 .uni-tag--mark.data-v-3f606880 {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
+  -webkit-border-top-left-radius: 0;
+          border-top-left-radius: 0;
+  -webkit-border-bottom-left-radius: 0;
+          border-bottom-left-radius: 0;
+  -webkit-border-top-right-radius: 15px;
+          border-top-right-radius: 15px;
+  -webkit-border-bottom-right-radius: 15px;
+          border-bottom-right-radius: 15px;
 }
 .uni-tag--disabled.data-v-3f606880 {
   opacity: 0.5;

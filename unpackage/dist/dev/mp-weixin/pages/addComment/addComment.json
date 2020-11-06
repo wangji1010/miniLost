@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "添加回答",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "u-toast": "/uview-ui/components/u-toast/u-toast"
+  }
+}

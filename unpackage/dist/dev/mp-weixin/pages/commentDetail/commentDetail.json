@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "回复详情",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "u-toast": "/uview-ui/components/u-toast/u-toast",
+    "u-icon": "/uview-ui/components/u-icon/u-icon"
+  }
+}

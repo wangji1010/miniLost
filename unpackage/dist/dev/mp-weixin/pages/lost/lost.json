@@ -2,9 +2,11 @@
   "navigationBarTitleText": "失物招领",
   "navigationBarTextStyle": "black",
   "enablePullDownRefresh": true,
+  "navigationStyle": "custom",
   "usingComponents": {
+    "u-navbar": "/uview-ui/components/u-navbar/u-navbar",
+    "u-search": "/uview-ui/components/u-search/u-search",
     "uni-tag": "/components/uni-tag/uni-tag",
-    "uni-nav-bar": "/components/uni-nav-bar/uni-nav-bar",
-    "mnavbar": "/components/mnavbar/mnavbar"
+    "uni-fab": "/components/uni-fab/uni-fab"
   }
 }

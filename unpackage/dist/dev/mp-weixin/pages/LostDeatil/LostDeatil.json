@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "失物详情",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "u-icon": "/uview-ui/components/u-icon/u-icon"
+  }
+}

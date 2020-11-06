@@ -1,5 +1,6 @@
 <template>
 	<view class="post-box">
+		
 		<view class="post-add-btn" @click="checkSession">
 			<image src="../../static/icon/add.png" mode=""></image>
 		</view> 
@@ -142,7 +143,7 @@
 
 <style lang="scss">
 	.post-box {
-
+		
 
 		.post-add-btn {
 			position: fixed;

@@ -11,19 +11,17 @@
 
 		<view class="user-login" v-else>
 			<!-- <text @click="toLogin">登 录</text> -->
-			<!-- #ifdef MP-WEIXIN -->
+			 
 			<button type="default" open-type="getUserInfo" style="background-color: #FFFFFF;"
 			 @getuserinfo="toLogin">登 录</button>
-			<!-- #endif -->
+			
 			 
-			 <!-- #ifdef APP-PLUS -->
-			 <button type="default" style="background-color: #FFFFFF;" @click="toLogin">登 录</button>
-			 <!-- #endif -->
+			
 			
 		</view>
 
-		<view class="user-article">
-			<view class="mine-issue-title">
+		<view class="user-article" @click="toOwn">
+			<view class="mine-issue-title" >
 				<image src="../../static/icon/tianxie.png" mode=""></image>
 				<text>我发布的内容</text>
 			</view>
@@ -40,7 +38,7 @@
 				<uni-icons color="#a8a8a8" type="forward" size="24"></uni-icons>
 			</view>
 		</view>
-		<view class="edu-link">
+		<view class="edu-link" @click="toSoftNet">
 			<view class="mine-issue-title">
 				<image src="../../static/icon/lianjie.png" mode=""></image>
 				<text>湖南软件职业学院</text>
@@ -49,7 +47,7 @@
 				<uni-icons color="#a8a8a8" type="forward" size="24"></uni-icons>
 			</view>
 		</view>
-		<view class="au-link">
+		<view class="au-link" @click="toYbkj">
 			<view class="mine-issue-title">
 				<image src="../../static/icon/wangluo.png" mode=""></image>
 				<text>洋波科技</text>
@@ -58,7 +56,7 @@
 				<uni-icons color="#a8a8a8" type="forward" size="24"></uni-icons>
 			</view>
 		</view>
-		<view class="about">
+		<view class="about" @click="toAbout">
 			<view class="mine-issue-title">
 				<image src="../../static/icon/guanyu.png" mode=""></image>
 				<text>关于</text>
@@ -101,15 +99,34 @@
 			}
 		},
 		onLoad() {
-			// #ifdef APP-PLUS
-			this.checkUserLogin()
-			// #endif
+			// // #ifdef APP-PLUS
+			// this.checkUserLogin()
+			// // #endif
 			//检查 是否有缓存的用户信息
 			this.checkUserInfoByStorage();
 			
 		},
 		methods: {
-			
+			toAbout(){
+				uni.navigateTo({
+					url:'../about/about'
+				})
+			},
+			toYbkj(){
+				uni.navigateTo({
+					url:'../ybkj/ybkj'
+				})
+			},
+			toSoftNet(){
+				uni.navigateTo({
+					url:'../softNet/softNet'
+				})
+			},
+			toOwn(){
+				uni.navigateTo({
+					url:'../ownArticle/ownArticle'
+				})
+			},
 			//检查用户是否有i缓存的用户信息
 			checkUserInfoByStorage(){
 				const _this = this;
@@ -138,38 +155,38 @@
 				
 			},
 			
-			// #ifdef APP-PLUS
-			async checkUserLogin() {
-				let res = await api.checkUserLogin()
-				console.log(res)
-				if (res.code == 200) {
-					//已经登录 显示用户信息
+			// // #ifdef APP-PLUS
+			// async checkUserLogin() {
+			// 	let res = await api.checkUserLogin()
+			// 	console.log(res)
+			// 	if (res.code == 200) {
+			// 		//已经登录 显示用户信息
 					
-					this.islogin = true
+			// 		this.islogin = true
 
-				} else {
-					//未登录
-					//提示，并跳转 到登录页面
-					this.$refs.popup.open()
-				}
-			},
-			// #endif
+			// 	} else {
+			// 		//未登录
+			// 		//提示，并跳转 到登录页面
+			// 		this.$refs.popup.open()
+			// 	}
+			// },
+			// // #endif
 
 			toLogin() {
 				
 				const _this = this
 
-				// #ifdef APP-PLUS
-				uni.navigateTo({
-					url: '../login/login',
-					success() {
+				// // #ifdef APP-PLUS
+				// uni.navigateTo({
+				// 	url: '../login/login',
+				// 	success() {
 
-					}
-				})
-				// #endif
+				// 	}
+				// })
+				// // #endif
 
 				//调用微信接口登录
-				// #ifdef MP-WEIXIN
+				//// #ifdef MP-WEIXIN
 				console.log('微信')
 				//
 				uni.getUserInfo({
@@ -196,7 +213,7 @@
 						_this.islogin = true
 					}
 				})
-				// #endif
+				//// #endif
 
 			},
 			close(done) {

@@ -1,0 +1,14 @@
+{
+  "navigationBarTitleText": "发布",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "u-toast": "/uview-ui/components/u-toast/u-toast",
+    "u-form-item": "/uview-ui/components/u-form-item/u-form-item",
+    "u-radio-group": "/uview-ui/components/u-radio-group/u-radio-group",
+    "u-radio": "/uview-ui/components/u-radio/u-radio",
+    "u-upload": "/uview-ui/components/u-upload/u-upload",
+    "u-button": "/uview-ui/components/u-button/u-button",
+    "m_upload": "/components/m-upload/m-upload",
+    "upload": "/components/upload/upload"
+  }
+}

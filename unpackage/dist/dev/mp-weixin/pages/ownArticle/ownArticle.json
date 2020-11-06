@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "我的发布",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "uni-tag": "/components/uni-tag/uni-tag",
+    "uni-fab": "/components/uni-fab/uni-fab"
+  }
+}

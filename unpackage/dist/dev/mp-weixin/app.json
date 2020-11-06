@@ -6,7 +6,15 @@
     "pages/mine/mine",
     "pages/login/login",
     "pages/postAdd/postAdd",
-    "pages/postDetail/postDetail"
+    "pages/postDetail/postDetail",
+    "pages/addComment/addComment",
+    "pages/commentDetail/commentDetail",
+    "pages/addLost/addLost",
+    "pages/LostDeatil/LostDeatil",
+    "pages/ownArticle/ownArticle",
+    "pages/softNet/softNet",
+    "pages/ybkj/ybkj",
+    "pages/about/about"
   ],
   "subPackages": [],
   "window": {

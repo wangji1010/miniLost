@@ -29,12 +29,14 @@
   padding-right: 40rpx;
 }
 .index-box .index-box-top {
-  border-radius: 24rpx;
+  -webkit-border-radius: 24rpx;
+          border-radius: 24rpx;
   margin-top: 20rpx;
   width: 100%;
   height: 320rpx;
   background-color: #ffffff;
-  box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 3px 3px rgba(0, 0, 0, 0.1);
 }
 .index-box .index-box-top .top-content {
   text-align: center;
@@ -66,7 +68,8 @@
   font-size: 25rpx;
 }
 .index-box .index-box-midlle {
-  border-radius: 24rpx;
+  -webkit-border-radius: 24rpx;
+          border-radius: 24rpx;
   margin-top: 20rpx;
   width: 100%;
   height: 320rpx;
@@ -97,7 +100,8 @@
   overflow: hidden;
 }
 .index-box .index-box-bottom {
-  border-radius: 24rpx;
+  -webkit-border-radius: 24rpx;
+          border-radius: 24rpx;
   margin-top: 20rpx;
   width: 100%;
   height: 320rpx;

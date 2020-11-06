@@ -61,6 +61,7 @@
 			// 下拉弹窗的高度
 			height: {
 				type: [Number, String],
+				// default: '170'
 				default: 'auto'
 			},
 		},

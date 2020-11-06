@@ -62,8 +62,8 @@
 			"list": [
 				{
 					"id": -1,
-					"name": "pages/postDetail/postDetail",
-					"pathName": "pages/postDetail/postDetail",
+					"name": "pages/ownArticle/ownArticle",
+					"pathName": "pages/ownArticle/ownArticle",
 					"scene": null
 				}
 			]

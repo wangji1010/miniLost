@@ -260,7 +260,8 @@ export default {
 		return {
 			lists: [],
 			isInCount: true,
-			uploading: false
+			uploading: false,
+			url:''
 		};
 	},
 	watch: {
@@ -412,6 +413,8 @@ export default {
 			}
 			this.lists[index].error = false;
 			this.uploading = true;
+			console.log('*******************文件路劲********-------**********')
+			console.log(this.lists)
 			// 创建上传对象
 			const task = uni.uploadFile({
 				url: this.action,
@@ -420,13 +423,19 @@ export default {
 				formData: this.formData,
 				header: this.header,
 				success: res => {
+					console.log('*********************************-------**********')
+					console.log(res)
+					console.log(res.data)
+					
 					// 判断是否json字符串，将其转为json格式
 					let data = this.toJson && this.$u.test.jsonString(res.data) ? JSON.parse(res.data) : res.data;
 					if (![200, 201, 204].includes(res.statusCode)) {
 						this.uploadError(index, data);
 					} else {
 						// 上传成功
-						this.lists[index].response = data;
+						this.url = res.data
+						this.$emit('child',this.url)
+						this.lists[index].response = data; 
 						this.lists[index].progress = 100;
 						this.lists[index].error = false;
 						this.$emit('on-success', data, index, this.lists, this.index);
